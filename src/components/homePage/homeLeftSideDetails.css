@@ -1,0 +1,12 @@
+.left-side {
+    flex-basis: 30%;
+    height: 100%;
+    background-color: #fff;
+    color: #000;
+}
+
+.home__navbar {
+    position: absolute;
+    width: 100%;
+    background-color: red;
+}
