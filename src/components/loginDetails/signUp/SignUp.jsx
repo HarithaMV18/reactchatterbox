@@ -30,24 +30,11 @@ const SignUp = ({ auth }) => {
           setErr(true);
         },
         () => {
-          getDownloadURL(uploadTask.snapshot.ref).then(async (downloadURL) => {
-            console.log(downloadURL);
-            // await updateProfile(response.user, {
-            //   displayName: name,
-            //   photoURL: downloadURL,
-            // });
-
-            // await setDoc(doc(db, "users", response.user.uid), {
-            //   uid: response.user.uid,
-            //   displayName: name,
-            //   photoURL: downloadURL,
-            //   email: email,
-            // });
+          getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
+            console.log("File available at", downloadURL);
           });
         }
       );
-
-      console.log(response);
     } catch (err) {
       console.log(err.message);
       setErr(true);
