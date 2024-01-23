@@ -14,3 +14,33 @@
     background-color: #000;
 
 }
+
+.home__navbar {
+    position: absolute;
+    width: 100%;
+    background-color: #ffffff52;
+    display: flex;
+}
+
+.nav__left__header {
+    width: 30%;
+    padding: 1rem 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.profile-details {
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.profile-photo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
